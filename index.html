@@ -77,7 +77,18 @@
                 <img id="Language" src="/Files/Icons/CSS.png" alt="Css">
             </div>
             <p id="title2">Title</p>
-            <p id="description1">Description</p>
+            <p id="description1" style="margin-left: 1%;">Description</p>
         </div>
     </body>
 </html>
+
+
+
+<script> // ik heb dit gemaakt zodat het automatish naar het meest recente nieuws gaat
+    window.onload = function() {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        })
+    }
+</script>
