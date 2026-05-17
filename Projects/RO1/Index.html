@@ -117,48 +117,32 @@
         <title>Logboek Dennis</title>
     </head>
     <body>
-        <h1>Logboek Dennis</h1>
-        <div id="Container">
-            <div id="HorizontalContainer">
-                <p id="title1">Portifolio</p> <p id="Date">5/11/2026</p> <h2 id="Opdracht">Theorie opdracht 1</h2>
-            </div>
-            <div id="LanguageContainer">
-                <img id="Language" src="Files/Icons/HTML.png" alt="Html">
-                <img id="Language" src="Files/Icons/CSS.png" alt="Css">
-                <img id="Language" src="Files/Icons/Git.png" alt="Git">
-            </div>
-            <img src="Files/Images/Portifolio_screenshot.png" alt="Image1" width="150px" height="170px"; style="display: block; margin: 0 auto;">
-            
-            <p id="title2">Doelstelling</p>
-            <p id="description1" style="margin-left: 1%;">een kleine theorie opdracht van het maken van een pagina die laat zien wie je bent en over jezelf</p>
-            <div id="HorizontalContainer"> <img src="Files/Icons/Checkmark.png" alt="Succsess" width="7%" height="7%"> <p id="status_Succsess">Gehaald</p> </div>
-            
-            <button style="margin-top: 5%; margin-bottom: 5%; border: 2px solid #8b5e3c; border-radius: 12px; background: #f7d6a3; color: #4a2f16; font-size: 1rem; cursor: pointer; display: block; margin: 0 auto;" onclick="window.location.href='Projects/TO1/index.html'">Expand</button>
-
-            <div id="HorizontalContainer" style="background-color: rgb(163, 138, 105); width: 100%;">
-                <h2 style="color: white; font-size: 1.5cap;">Project Toezicht houder: </h2>
-                <h2 style="color: white; font-size: 1.5cap;">Nienke Schagen-van zijl, Docent Media & 3d Vormgeving, Parcours Tilburg</h2>
-            </div>
-        </div>
-
-
-
+        <button onclick="window.history.back()">Return</button>
         <div id="Container">
             <div id="HorizontalContainer">
                 <p id="title1">Logboek</p> <p id="Date">5/17/2026</p> <h2 id="Opdracht" style="color: aqua;">Reflectie opdracht 1</h2>
             </div>
             <div id="LanguageContainer">
-                <img id="Language" src="Files/Icons/HTML.png" alt="Html">
-                <img id="Language" src="Files/Icons/CSS.png" alt="Css">
-                <img id="Language" src="Files/Icons/JS.png" alt="JavaScript">
-                <img id="Language" src="Files/Icons/Git.png" alt="Git">
+                <img id="Language" src="../../Files//Icons/HTML.png" alt="Html">
+                <img id="Language" src="../../Files//Icons/CSS.png" alt="Css">
+                <img id="Language" src="../../Files//Icons/JS.png" alt="JavaScript">
+                <img id="Language" src="../../Files//Icons/Git.png" alt="Git">
             </div>
             
             <p id="title2">Doelstelling</p>
             <p id="description1" style="margin-left: 1%;">een pagina maken waar je over het koment jaar elke opdrachten in bijhoudt en hoe die gingen</p>
-            <div id="HorizontalContainer"> <img src="Files/Icons/Warning.png" alt="Succsess" width="7%" height="7%"> <p id="status_Warning">Onbeoordeeld</p> </div>
+            <div id="HorizontalContainer"> <img src="../../Files//Icons/Warning.png" alt="Succsess" width="7%" height="7%"> <p id="status_Warning">Onbeoordeeld</p> </div>
             
-            <button style="margin-top: 5%; margin-bottom: 5%; border: 2px solid #8b5e3c; border-radius: 12px; background: #f7d6a3; color: #4a2f16; font-size: 1rem; cursor: pointer; display: block; margin: 0 auto;" onclick="window.location.href='Projects/RO1/index.html'">Expand</button>
+            <p id="title2">Zelf Reflectie</p>
+            <p id="description1" style="margin-left: 1%;">dit was leuk en ik heb weer wat geleerd, voornamelijk wat nieuwe factooren van CSS zoals flexbox, wat dichterbij te komen met de html taal en ik was een beetje begonnen met javascript om er voor te zorgen dat de pagina naar de bodem gaat zodat de lezer altijd het meest recente project als eerst krijgt, het ziet er zoizo 2 keer vrolijker uit dan de eerste versie van de poritolio dit laat een leermoment zien</p>
+            <div id="HorizontalContainer"> <img src="../../Files//Icons/Warning.png" alt="Succsess" width="7%" height="7%"> <p id="status_Warning">Onbeoordeeld</p> </div>
+
+            <p id="title2">Feedback</p>
+            <p id="description1" style="margin-left: 1%;">-Nog niet ontvangen</p>
+            
+            <div id="HorizontalContainer">
+                <button style="margin-top: 5%; margin-bottom: 5%; margin-left: 0%; margin-right: 3%; border: 2px solid #8b5e3c; border-radius: 12px; background: #f7d6a3; color: #4a2f16; font-size: 1.5rem; cursor: pointer;" onclick="window.location.href='Files/Raw.txt'">View Raw</button>
+            </div>
 
             <div id="HorizontalContainer" style="background-color: rgb(163, 138, 105); width: 100%;">
                 <h2 style="color: white; font-size: 1.5cap;">Project Toezicht houder: </h2>
@@ -167,14 +151,3 @@
         </div>
     </body>
 </html>
-
-
-
-<script> // ik heb dit gemaakt zodat het automatish naar het meest recente nieuws gaat
-    window.onload = function() {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: 'smooth'
-        })
-    }
-</script>

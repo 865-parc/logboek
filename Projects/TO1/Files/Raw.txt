@@ -1,0 +1,454 @@
+<style>
+    /* 1. Super Header: Extra bold and distinct */
+  :root {
+    background-color: #ffffff;
+  }
+
+  h1 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+    color: #1a1a1a;
+  }
+  
+  /* 2. Bold Header: Strong but standard */
+  h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+  }
+  h3 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* 3. Regular Header: Normal weight, optimized for clarity */
+  h4 {
+    font-weight: 400; /* Regular weight */
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #555;
+    border-left: 4px solid #ececec; /* Adds a clear visual marker */
+    padding-left: 15px;
+  }
+
+  .circle-image {
+    width: 200px;         /* Set a specific width */
+    height: 200px;        /* Set the same height to make it a square */
+    border-radius: 50%;   /* This turns the square into a circle */
+    object-fit: cover;    /* Ensures the image doesn't look stretched */
+  }
+
+
+  /* Center the table within its parent */
+/* Container for responsiveness and card feel */
+.table-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow-x: auto; /* Scrollable on mobile */
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Header Styling */
+.stats-table thead th {
+  padding: 16px;
+  background-color: #f8fafc;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Row Styling */
+.stats-table tbody td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+/* Hover effect for interactivity */
+.stats-table tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+/* Emphasizing specific stat values */
+.stat-value {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Status Badges */
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge.warning {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.badge.error {
+  background-color: #fef9c3;
+  color: #a10707;
+}
+
+.badge.info {
+  background-color: #09a8bd;
+  color: #087483;
+}
+
+.badge.highlight {
+  background-color: #4d4d4d;
+  color: #e5e7eb;
+}
+
+/* Last row shouldn't have a border */
+.stats-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+.timeline-bar {
+        width: 100%;
+        height: 8px;
+        background: #e5e7eb;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 6px;
+      }
+      .timeline-progress {
+        height: 100%;
+        background: #3b82f6;
+        width: 0%;
+        transition: width 0.6s ease;
+      }
+      .checkmark {
+        font-size: 1.2rem;
+        color: #16a34a;
+        font-weight: bold;
+      }
+      .pending {
+        font-size: 1.2rem;
+        color: #9ca3af;
+        font-weight: bold;
+      }
+      
+</style>
+
+<head>
+  <title>Portifolio - Dennis</title>
+</head>
+<boddy>
+  <h1>over mij</h1>
+  <div style="display: flex; justify-content: center;">
+  <img src="images/DennisProfielFoto_Noodles.jpg" alt="Profile Picture" class="circle-image">
+  </div>
+  <h3>865@leerling.parcourstilburg.nl</h3>
+  <h2>Dennis Heering</h2>
+  <div class="table-container">
+  <h3>Biografiek</h3>
+  <table class="stats-table">
+    <tbody>
+      <tr>
+        <td>Voor: dennis</td>
+        <td>Achter: Heering</td>
+      </tr>
+      <tr>
+        <td>oorsprong-geslacht: Man</td>
+        <td>leeftijd: 16</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Hobbys</h3>
+  <table class="stats-table">
+    <tbody>
+      <tr>
+        <td><span class="badge highlight">scouting</span></td>
+        <td><span class="badge highlight">jiu jitsu</span></td>
+        <td><span class="badge highlight">Programeeren</span></td>
+        <td><span class="badge highlight">gamen</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Opleiding Route</h3>
+  <table class="stats-table">
+    <tbody>
+      <tr>
+        <td class="stat-value">Basis Onderwijs</td>
+        <td>Muldersteeg</td>
+        <td>Vmbo</td>
+        <td></td>
+        <td><span class="badge success">klaar</span></td>
+      </tr>
+      <tr>
+        <td class="stat-value">Momunteele opleiding</td>
+        <td>Parcours</td>
+        <td>Vmbo-Kader</td>
+        <td>V3B</td>
+        <td><span class="badge info">Mee Bezig</span></td>
+      </tr>
+      <tr>
+        <td class="stat-value">Doel Opleiding</td>
+        <td>Currio</td>
+        <td>MBO-3</td>
+        <td>Software Developer</td>
+        <td><span class="badge warning">In de wacht</span></td>
+      </tr>
+      <tr>
+  
+
+    </tbody>
+  </table>
+</div>
+
+
+<!-- ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt || HIER IS EEN NIEUW DEEL || ttttttttttttttttttttttttttttttttttt -->
+      <hr class="rounded">
+
+<div class="table-container">
+  <h1>V3B Eind Calender</h1>
+<td colspan="5">
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const today = new Date();
+
+        const weeks = [
+          { week: 11, start: "2026-04-13", end: "2026-04-17" },
+          { week: 11, start: "2026-04-20", end: "2026-04-24" },
+          { week: 11, start: "2026-04-27", end: "2026-05-01" },
+          { week: 10, start: "2026-05-06", end: "2026-05-08" },
+          { week: 9,  start: "2026-05-11", end: "2026-05-15" },
+          { week: 8,  start: "2026-05-18", end: "2026-05-22" },
+          { week: 7,  start: "2026-05-25", end: "2026-05-29" },
+          { week: 6,  start: "2026-06-01", end: "2026-06-05" },
+          { week: 5,  start: "2026-06-08", end: "2026-06-12" },
+          { week: 4,  start: "2026-06-15", end: "2026-06-19" },
+          { week: 3,  start: "2026-06-22", end: "2026-06-26" },
+          { week: 2,  start: "2026-06-29", end: "2026-07-03" },
+          { week: 1,  start: "2026-07-06", end: "2026-07-10" }
+        ];
+
+        const rows = document.querySelectorAll(".week-row");
+
+        rows.forEach((row, index) => {
+          const w = weeks[index];
+          const start = new Date(w.start);
+          const end = new Date(w.end);
+
+          const statusCell = row.querySelector(".status-cell");
+          const bar = row.querySelector(".timeline-progress");
+
+          if (today > end) {
+            statusCell.innerHTML = "✔️";
+            bar.style.width = "100%";
+          } else if (today >= start && today <= end) {
+            statusCell.innerHTML = "⏳";
+            const progress = ((today - start) / (end - start)) * 100;
+            bar.style.width = progress + "%";
+          } else {
+            statusCell.innerHTML = "•";
+            bar.style.width = "0%";
+          }
+        });
+      });
+    </script>
+
+    <div class="table-container">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Datum</th>
+            <th>Inhoud</th>
+            <th>Belangrijk</th>
+            <th>Wat te doen</th>
+            <th>Status</th>
+            <th>Tijdlijn</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <!-- WEEK 11 -->
+          <tr class="week-row" style="background-color:#f1f5f9;">
+            <td>11</td>
+            <td>13 t/m 17 april</td>
+            <td>‘gewone’ schoolweek</td>
+            <td>17 april</td>
+            <td>Definitieve keuze voor keuzevakken</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <tr class="week-row" style="background-color:#fde68a;">
+            <td>11</td>
+            <td>20 t/m 24 april</td>
+            <td>Meivakantie</td>
+            <td></td>
+            <td>Meivakantie</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <tr class="week-row" style="background-color:#fde68a;">
+            <td>11</td>
+            <td>27 april t/m 1 mei</td>
+            <td>Meivakantie</td>
+            <td></td>
+            <td>Meivakantie</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 10 -->
+          <tr class="week-row" style="background-color:#bfdbfe;">
+            <td>10</td>
+            <td>6 t/m 8 mei</td>
+            <td>CITO</td>
+            <td></td>
+            <td>CITO maken in de ochtend</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 9 -->
+          <tr class="week-row" style="background-color:#bfdbfe;">
+            <td>9</td>
+            <td>11 t/m 15 mei</td>
+            <td>CITO</td>
+            <td></td>
+            <td>CITO maken in de ochtend</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 8 -->
+          <tr class="week-row">
+            <td>8</td>
+            <td>18 t/m 22 mei</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 7 -->
+          <tr class="week-row">
+            <td>7</td>
+            <td>25 t/m 29 mei</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 6 -->
+          <tr class="week-row" style="background-color:#bfdbfe;">
+            <td>6</td>
+            <td>1 t/m 5 juni</td>
+            <td>Toetsweek (3/3)</td>
+            <td></td>
+            <td>Planning toetsweek volgen!</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 5 -->
+          <tr class="week-row">
+            <td>5</td>
+            <td>8 t/m 12 juni</td>
+            <td></td>
+            <td></td>
+            <td>OPP- en oudergesprekken</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 4 -->
+          <tr class="week-row">
+            <td>4</td>
+            <td>15 t/m 19 juni</td>
+            <td></td>
+            <td></td>
+            <td>OPP- en oudergesprekken</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 3 -->
+          <tr class="week-row">
+            <td>3</td>
+            <td>22 t/m 26 juni</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 2 -->
+          <tr class="week-row" style="background-color:#f1f5f9;">
+            <td>2</td>
+            <td>29 juni t/m 3 juli</td>
+            <td>Laatste schoolweek-activiteiten</td>
+            <td>8 juli → laatste schooldag</td>
+            <td></td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+          <!-- WEEK 1 -->
+          <tr class="week-row" style="background-color:#fde68a;">
+            <td>1</td>
+            <td>6 t/m 10 juli</td>
+            <td></td>
+            <td></td>
+            <td>Start zomervakantie</td>
+            <td class="status-cell"></td>
+            <td><div class="timeline-bar"><div class="timeline-progress"></div></div></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </td>
+</tr>
+</boddy>
